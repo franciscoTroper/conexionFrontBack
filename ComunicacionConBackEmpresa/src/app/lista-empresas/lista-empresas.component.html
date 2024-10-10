@@ -1,0 +1,16 @@
+<h1>Tareas desde el back</h1>
+<table>
+    <caption>Lista de empresas</caption>
+    <tr>
+        <th>Nie</th>
+        <th>nombre empresa</th>
+        <th>direccion</th>
+    </tr>
+    @for (elemento of empresas; track elemento.nie) {
+        <tr>
+            <td>{{elemento.nie}}</td>
+            <td>{{elemento.nombreEmpresa}}</td>
+            <td>{{elemento.direccion}}</td>
+        </tr>
+    }
+</table>

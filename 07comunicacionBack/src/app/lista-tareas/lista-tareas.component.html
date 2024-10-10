@@ -1,0 +1,17 @@
+<h1>Tareas desde el back</h1>
+<table>
+    <caption>Lista de tareas</caption>
+    <tr>
+        <th>IdTarea</th>
+        <th>nombre Tarea</th>
+        <th>Prioridad</th>
+    </tr>
+    @for (elemento of tareas; track elemento.idTarea) {
+        <tr>
+            <td>{{elemento.idTarea}}</td>
+            <td>{{elemento.nombreTarea}}</td>
+            <td>{{elemento.prioridad}}</td>
+        </tr>
+    }
+    
+</table>
